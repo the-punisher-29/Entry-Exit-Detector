@@ -1,10 +1,10 @@
 numpy
+pandas
+scipy
 cmake
 opencv-python
 dlib
 imutils
-pandas
 matplotlib
 schedule
 argparse
-scipy
