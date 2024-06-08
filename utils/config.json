@@ -1,7 +1,7 @@
 {
-    "Email_Send": "",
-    "Email_Receive": "",
-    "Email_Password": "",
+    "Email_Send": "",          //sender's email
+    "Email_Receive": "",       //receiver's email
+    "Email_Password": "",      // source email password
     "url": "1",
     "ALERT": false,
     "Threshold": 10,
