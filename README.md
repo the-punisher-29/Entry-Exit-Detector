@@ -1,10 +1,5 @@
 # Entry-Exit-Detector
 
-<div align="center">
-<img src=https://imgur.com/SaF1kk3.gif" width=550>
-<p>Live demo</p>
-</div>
-
 - Use case: counting the number of people in the stores/buildings/shopping malls etc., in real-time.
 - Automating features and optimising the real-time stream for better performance (with threading).
 - Acts as a measure towards footfall analysis and in a way to tackle COVID-19 scenarios.
@@ -35,7 +30,7 @@ pip install -r requirements.txt ```
 #### Test video file
 To run inference on a test video file, head into the root directory and run the command: 
 ```
-python people_counter.py --prototxt detector/MobileNetSSD_deploy.prototxt --model detector/MobileNetSSD_deploy.caffemodel --input utils/data/tests/test_1.mp4
+python people_counter.py --prototxt detector/MobileNetSSD_deploy.prototxt --model detector/MobileNetSSD_deploy.caffemodel --input utils/data/tests/test_1/2.mp4
 ```
 
 #### Webcam
