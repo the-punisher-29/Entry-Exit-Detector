@@ -42,5 +42,5 @@ python people_counter.py --prototxt detector/MobileNetSSD_deploy.prototxt --mode
 
 
 
-Suggestions are welcome!
+Suggestions are welcome!//
 If you found any issue,Please raise the same.
