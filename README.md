@@ -34,10 +34,10 @@ python people_counter.py --prototxt detector/MobileNetSSD_deploy.prototxt --mode
 ```
 
 #### Webcam
-To run on a webcam, set ```"url": 0``` in ```utils/config.json``` and run the command:
+To run on a webcam,run the command:
 
 ```
-python people_counter.py --prototxt detector/MobileNetSSD_deploy.prototxt --model detector/MobileNetSSD_deploy.caffemodel
+python pc_webcam.py
 ```
 
 
