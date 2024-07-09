@@ -2,7 +2,7 @@
 
 - Use case: counting the number of people in the stores/buildings/shopping malls etc., in real-time.
 - Automating features and optimising the real-time stream for better performance (with threading).
-- Acts as a measure towards footfall analysis and in a way to tackle COVID-19 scenarios.
+- Acts as a measure towards footfall analysis
 
 ## Simple Theory
 
@@ -18,6 +18,29 @@
 - That is, the bounding boxes are ```(x, y)``` co-ordinates of the objects in an image. 
 - Once the co-ordinates are obtained by our SSD, the tracker computes the centroid (center) of the box. In other words, the center of an object.
 - Then an ```unique ID``` is assigned to every particular object deteced, for tracking over the sequence of frames.
+
+## Why MobileNet + SSD
+In this project, we harness the power of MobileNet and Single Shot Detector (SSD) architectures to achieve blazing-fast, real-time object detection on resource-limited devices like Raspberry Pi, smartphones, and more.
+
+Single Shot Detectors (SSDs) excel by predicting bounding boxes and class probabilities directly from feature maps in a single pass, making them perfect for real-time applications. We pair SSDs with MobileNets, lightweight convolutional neural networks designed for mobile and embedded vision applications. MobileNets are super efficient due to their use of depthwise separable convolutions, drastically reducing the number of parameters and computations compared to traditional convolutional networks.
+
+Combining MobileNet with SSD strikes a balance between speed and accuracy, making this approach ideal for real-time object detection on devices with limited computational power.
+
+## Technical Implementation:
+
+OpenCV's dnn module is used to load a pre-trained Caffe implementation of MobileNet SSD, originally trained on COCO and fine-tuned on PASCAL VOC, achieving a mean average precision (mAP) of 72.7%.
+Input images are fed into the network to obtain bounding box coordinates for each detected object.
+Advantages of SSDs:
+
+SSDs offer a sweet spot between speed and accuracy, making them preferable to Faster R-CNNs (complex and slower) or YOLO (fast but less accurate).
+SSDs provide a simpler and well-documented approach with a faster FPS throughput compared to YOLO.
+Why MobileNets:
+
+Designed for resource-constrained devices, MobileNets are far smaller (200-500MB) than traditional architectures like VGG or ResNet.
+Depthwise separable convolutions reduce parameters and computations, making MobileNets more resource-efficient.
+By joining forces with MobileNets, SSDs become even more efficient and effective, enabling real-time object detection on your favorite devices.
+
+Credit: The MobileNet SSD model used in this project was trained by chuanqi305 (see their GitHub repository at https://github.com/chuanqi305/MobileNet-SSD).
 
 ## Steps to Run the Model-
 
