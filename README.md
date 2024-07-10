@@ -28,19 +28,19 @@ Combining MobileNet with SSD strikes a balance between speed and accuracy, makin
 
 ## Technical Implementation:
 
-OpenCV's dnn module is used to load a pre-trained Caffe implementation of MobileNet SSD, originally trained on COCO and fine-tuned on PASCAL VOC, achieving a mean average precision (mAP) of 72.7%.
-Input images are fed into the network to obtain bounding box coordinates for each detected object.
-Advantages of SSDs:
+OpenCV's dnn module is used to load a pre-trained Caffe implementation of MobileNet SSD, originally trained on COCO and fine-tuned on PASCAL VOC, achieving a mean average precision (mAP) of 72.7%.Input images are fed into the network to obtain bounding box coordinates for each detected object.
 
-SSDs offer a sweet spot between speed and accuracy, making them preferable to Faster R-CNNs (complex and slower) or YOLO (fast but less accurate).
-SSDs provide a simpler and well-documented approach with a faster FPS throughput compared to YOLO.
-Why MobileNets:
+### Advantages of SSDs:
+- SSDs offer a sweet spot between speed and accuracy, making them preferable to Faster R-CNNs (complex and slower) or YOLO (fast but less accurate).
+- SSDs provide a simpler and well-documented approach with a faster FPS throughput compared to YOLO.
 
-Designed for resource-constrained devices, MobileNets are far smaller (200-500MB) than traditional architectures like VGG or ResNet.
-Depthwise separable convolutions reduce parameters and computations, making MobileNets more resource-efficient.
-By joining forces with MobileNets, SSDs become even more efficient and effective, enabling real-time object detection on your favorite devices.
+### Why MobileNets:
 
-Credit: The MobileNet SSD model used in this project was trained by chuanqi305 (see their GitHub repository at https://github.com/chuanqi305/MobileNet-SSD).
+- Designed for resource-constrained devices, MobileNets are far smaller (200-500MB) than traditional architectures like VGG or ResNet.
+- Depthwise separable convolutions reduce parameters and computations, making MobileNets more resource-efficient.
+- By joining forces with MobileNets, SSDs become even more efficient and effective, enabling real-time object detection on your favorite devices.
+
+'''Credit: The MobileNet SSD model used in this project was trained by chuanqi305 (see their GitHub repository at https://github.com/chuanqi305/MobileNet-SSD).'''
 
 ## Steps to Run the Model-
 
