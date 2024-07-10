@@ -40,7 +40,7 @@ OpenCV's dnn module is used to load a pre-trained Caffe implementation of Mobile
 - Depthwise separable convolutions reduce parameters and computations, making MobileNets more resource-efficient.
 - By joining forces with MobileNets, SSDs become even more efficient and effective, enabling real-time object detection on your favorite devices.
 
-'''Credit: The MobileNet SSD model used in this project was trained by chuanqi305 (see their GitHub repository at https://github.com/chuanqi305/MobileNet-SSD).'''
+```Credit: The MobileNet SSD model used in this project was trained by chuanqi305 (https://github.com/chuanqi305/MobileNet-SSD).```
 
 ## Steps to Run the Model-
 
